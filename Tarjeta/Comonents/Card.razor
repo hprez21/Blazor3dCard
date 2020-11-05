@@ -1,0 +1,19 @@
+﻿<div class="card" style="transform: rotateY(@(CardModel.YRotation.ToString("F", CultureInfo.InvariantCulture) + "deg")) rotateX(@(CardModel.XRotation.ToString("F", CultureInfo.InvariantCulture) + "deg")); transition: @CardModel.Transition">
+    <div class="tshirt" style="transform: @CardModel.TShirtTransition">
+        <div class="circle"></div>
+        <img src="/images/blazor_tshirt.png" alt="tshirt" />
+    </div>
+    <div class="info">
+        <h1 class="title" style="transform: @CardModel.TitleTransition">Blazor T-Shirt</h1>
+        <h3 style="transform: @CardModel.DescriptionTransition">LA MEJOR PLAYERA PARA LOS AMANTES DE BLAZOR</h3>
+        <div class="sizes" style="transform: @CardModel.SizesTransition">
+            <button>Chica</button>
+            <button>Mediana</button>
+            <button class="active">Grande</button>
+            <button>Extra Grande</button>
+        </div>
+        <div class="purchase" style="transform: @CardModel.PurchaseTransition">
+            <button>Purchase</button>
+        </div>
+    </div>
+</div>

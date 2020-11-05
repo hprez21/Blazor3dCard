@@ -1,0 +1,131 @@
+﻿*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+app{
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+}
+
+.container{    
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    transition: all 0.5s ease;
+    transform-style: preserve-3d;
+    min-height: 80vh;
+    width: 35rem;
+    box-shadow: 0px 20px 20px rgba(0,0,0, 0.2), 0px 0px 50px rgba(0,0,0,0.2);
+    border-radius: 30px;
+    padding: 0rem 5rem;
+}
+
+
+.info h1 {
+    font-size: 3rem;
+    transition: all 0.75s ease-out;
+}
+
+.info h3 {
+    font-size: 1.3rem;
+    padding: 2rem 0rem;
+    color: #585858;
+    font-weight: lighter;
+    transition: all 0.75s ease-out;
+}
+
+
+
+
+.tshirt{
+    min-height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+    .tshirt img {
+        height: 18rem;
+        z-index: 2;
+        transition: all 0.75s ease-out;
+    }
+
+
+.circle {
+    width: 15rem;
+    height: 15rem;
+    background-image: linear-gradient(161deg, rgba(117, 117, 117, 0.03) 0%, rgba(117, 117, 117, 0.03) 50%,rgba(8, 8, 8, 0.03) 50%, rgba(8, 8, 8, 0.03) 100%),linear-gradient(59deg, rgba(245, 245, 245, 0.05) 0%, rgba(245, 245, 245, 0.05) 50%,rgba(68, 68, 68, 0.05) 50%, rgba(68, 68, 68, 0.05) 100%),linear-gradient(286deg, rgba(107, 107, 107, 0.07) 0%, rgba(107, 107, 107, 0.07) 50%,rgba(7, 7, 7, 0.07) 50%, rgba(7, 7, 7, 0.07) 100%),linear-gradient(123deg, rgba(9, 9, 9, 0.09) 0%, rgba(9, 9, 9, 0.09) 50%,rgba(120, 120, 120, 0.09) 50%, rgba(120, 120, 120, 0.09) 100%),linear-gradient(170deg, rgba(202, 202, 202, 0.01) 0%, rgba(202, 202, 202, 0.01) 50%,rgba(19, 19, 19, 0.01) 50%, rgba(19, 19, 19, 0.01) 100%),linear-gradient(210deg, rgba(64, 64, 64, 0.04) 0%, rgba(64, 64, 64, 0.04) 50%,rgba(4, 4, 4, 0.04) 50%, rgba(4, 4, 4, 0.04) 100%),linear-gradient(90deg, rgb(249, 17, 190),rgb(100, 28, 213));
+    position:absolute;
+    border-radius: 50%;
+    z-index: 1;
+}
+.sizes {
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.75s ease-out;
+}
+
+
+    .sizes button {
+        padding: 0.5rem 2rem;
+        background: none;
+        border: none;
+        box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+        border-radius: 30px;
+        cursor: pointer;
+        font-weight: bold;
+        color: #585858;
+    }
+
+button.active {
+    background: #585858;
+    color: white;
+}
+
+.purchase {
+    margin-top: 5rem;
+    transition: all 0.75s ease-out;
+}
+
+
+    .purchase button {
+        width: 100%;
+        padding: 1rem 0rem;
+        background: #f54642;
+        border: none;
+        color: white;
+        cursor: pointer;
+        border-radius: 30px;
+        font-weight: bolder;
+    }
+
+
+
+#blazor-error-ui {
+    background: lightyellow;
+    bottom: 0;
+    box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.2);
+    display: none;
+    left: 0;
+    padding: 0.6rem 1.25rem 0.7rem 1.25rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+#blazor-error-ui .dismiss {
+    cursor: pointer;
+    position: absolute;
+    right: 0.75rem;
+    top: 0.5rem;
+}
